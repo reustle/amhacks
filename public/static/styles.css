@@ -2,13 +2,6 @@
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-	color: #fff;
-}
-
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -46,6 +39,13 @@ body {
 	height: 100%; /* For at least Firefox */
 	min-height: 100%;
 }
+
+	.site-wrapper a,
+	.site-wrapper a:focus,
+	.site-wrapper a:hover {
+		color: #fff;
+	}
+	
 .site-wrapper-inner {
 	display: table-cell;
 	vertical-align: top;
@@ -122,6 +122,18 @@ body {
 .cover .btn-lg {
 	padding: 10px 20px;
 	font-weight: bold;
+}
+
+#apply_modal .form-control {
+	margin-bottom: 10px;
+}
+
+#apply_modal .form-control:last-child {
+	margin-bottom: 0px;
+}
+
+#apply_modal .modal-footer {
+	margin-top: 0px;
 }
 
 

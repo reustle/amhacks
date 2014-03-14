@@ -8,7 +8,7 @@
 		<meta name='author' content=''>
 		<link rel='shortcut icon' href='../../assets/ico/favicon.ico'>
 		
-		<title>Amhacks | A hackathon aboard the California Zephyr</title>
+		<title>Amhacks | A breathtaking hackathon aboard the California Zephyr</title>
 		
 		<link href='/static/lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
 		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
@@ -32,21 +32,22 @@
 							<ul class='nav masthead-nav'>
 								<li class='active'><a href='#'>About</a></li>
 								<li><a href='#' data-toggle='modal' data-target='#details_modal'>Details</a></li>
-								<li><a href='#'>Apply</a></li>
+								<li><a href='#' data-toggle='modal' data-target='#apply_modal'>Apply to Ride</a></li>
+								<li><a href='http://twitter.com/amhacks' title='Stay up to date on Twitter'><img src='/static/img/twitter.png'/></a></li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class='inner cover'>
-						<p class='lead'>Amhacks is a 73 hour, 3,397 mile hackathon which takes place aboard the California Zephyr. The journey begins in New York City on Thursday June 19th and ends in San Francisco on Sunday June 22nd. You've never seen breathtaking views from behind your laptop screen like this before.</p>
+						<p class='lead'>Amhacks is a 73 hour, 3,397 mile hackathon which takes place aboard the California Zephyr. The journey begins in New York City on Thursday June 19th and ends in San Francisco on Sunday June 22nd. You've never seen breathtaking views like this from behind your laptop screen before.</p>
 						<p class='lead'>
-							<a href='#' class='btn btn-lg btn-default'>Apply for Amhacks</a>
+							<a href='#' class='btn btn-lg btn-primary' data-toggle='modal' data-target='#apply_modal'>Apply To Ride</a>
 						</p>
 					</div>
 					
 					<div class='mastfoot'>
 						<div class='inner'>
-							<p>Conducted by <a href='http://reustle.io' target='_blank'>Shane Reustle</a></p>
+							<p>&copy; 2014 Amhacks &minus; Conducted by <a href='http://reustle.io' target='_blank'>Shane Reustle</a> &minus; Powered by diesel fuel and Red Bull</p>
 						</div>
 					</div>
 					
@@ -70,19 +71,57 @@
 						<h4>Friday June 20th</h4>
 						<p>
 							9:45am: Arrive at Chicago (Union Station)<br/>
-							9:50am: Challenge - Git commit from the Sears Tower<br/>
+							9:50am: Git commit from the top of the Sears Tower<br/>
 							2:00pm: Depart from Chicago (Union Station) on the California Zephyr
 						</p>
 						
-						<h4>Sunday June 22th</h4>
-						<p>4:10am: Arrive at San Francisco (Emeryville Station)</p>
+						<h4>Saturday June 21st</h4>
+						<p>
+							7:20am: Begin ascent into Rocky Mountains
+						</p>
+						
+						<h4>Sunday June 22nd</h4>
+						<p>
+							4:10pm: Arrive at San Francisco (Emeryville Station)<br/>
+							6:00pm: Dinner and demos at <a href='#'>Awesome Pub Place</a>
+						</p>
+						
 					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+				</div>
+			</div>
+		</div>
+		
+		<div id='apply_modal' class='modal fade'>
+			<div class='modal-dialog'>
+				<div class='modal-content'>
+					<div class='modal-header'>
+						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+						<h4 class='modal-title'>Apply to ride Amhacks</h4>
+					</div>
+					<div class='modal-body'>
+						<p><a href='http://www.flickr.com/photos/locosteve/' target='_blank'><img class='img-responsive img-rounded' src='/static/img/view.jpg'/></a></p>
+						
+						<p>Cost is $300, one way. Return trip is up to you to figure out. Some inspirational text goes here to scare them away.</p>
+						
+						<form role='form' class='form-horizontal' id='apply_form'>
+							<input type='text' class='form-control' id='form_name' name='NAME' placeholder='Your Name'/>
+							<input type='email' class='form-control' id='form_email' name='EMAIL' placeholder='Email Address'/>
+							<input type='text' class='form-control' id='form_twitter' name='TWITTER' placeholder='Twitter Handle'/>
+							<input type='text' class='form-control' id='form_github' name='GITHUB' placeholder='GitHub Username'/>
+							<input type='text' class='form-control' id='form_hack' name='HACK' placeholder='Your coolest hack (link)'/>
+						</form>
+					</div>
+					<div class='modal-footer'>
+						<button type='button' id='btn_apply' class='btn btn-primary'>Submit Application</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 		<script src='/static/lib/bootstrap/js/bootstrap.min.js'></script>
+		<script src='/static/lib/jquery.ajaxchimp.js'></script>
+		<script src='/static/scripts.js'></script>
 	</body>
 </html>
 
