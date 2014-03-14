@@ -21,6 +21,7 @@ html,
 body {
 	height: 100%;
 	background: url('/static/img/background.jpg') center center;
+	background-attachment: fixed;
 	background-size: cover;
 	font-family: 'Gafata', sans-serif;
 }
@@ -64,6 +65,7 @@ body {
 }
 .inner .lead {
 	font-size: 24px;
+	line-height: 1.7;
 }
 
 
@@ -117,7 +119,7 @@ body {
  */
 
 .cover {
-	padding: 0 20px;
+	padding: 0 36px;
 }
 .cover .btn-lg {
 	padding: 10px 20px;
