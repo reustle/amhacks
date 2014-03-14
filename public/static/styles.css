@@ -20,15 +20,14 @@
 html,
 body {
 	height: 100%;
+}
+body {
 	background: url('/static/img/background.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
 	font-family: 'Gafata', sans-serif;
-}
-body {
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
