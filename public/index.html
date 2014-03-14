@@ -10,10 +10,8 @@
 		
 		<title>Amhacks | A hackathon aboard the California Zephyr</title>
 		
-		<!-- Bootstrap core CSS -->
 		<link href='/static/lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
-		
-		<!-- Custom styles for this template -->
+		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
 		<link href='/static/styles.css' rel='stylesheet'>
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,11 +22,8 @@
 	</head>
 	
 	<body>
-		
 		<div class='site-wrapper'>
-			
 			<div class='site-wrapper-inner'>
-				
 				<div class='cover-container'>
 					
 					<div class='masthead clearfix'>
@@ -36,15 +31,14 @@
 							<h3 class='masthead-brand'>Amhacks</h3>
 							<ul class='nav masthead-nav'>
 								<li class='active'><a href='#'>About</a></li>
-								<li><a href='#'>Details</a></li>
+								<li><a href='#' data-toggle='modal' data-target='#details_modal'>Details</a></li>
 								<li><a href='#'>Apply</a></li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class='inner cover'>
-						<h1 class='cover-heading'>Amhacks</h1>
-						<p class='lead'>Amhacks is a hackathon which takes place aboard the California Zephyr. The journey begins in New York City on June 19th and ends in San Francisco on June 22nd. Get ready for <a href='#'>amazing</a> <a href='#'>panoramic</a> <a href='#'>views</a> and long nights.</p>
+						<p class='lead'>Amhacks is a 73 hour, 3,397 mile hackathon which takes place aboard the California Zephyr. The journey begins in New York City on Thursday June 19th and ends in San Francisco on Sunday June 22nd. You've never seen breathtaking views from behind your laptop screen like this before.</p>
 						<p class='lead'>
 							<a href='#' class='btn btn-lg btn-default'>Apply for Amhacks</a>
 						</p>
@@ -57,14 +51,36 @@
 					</div>
 					
 				</div>
-				
 			</div>
-			
 		</div>
 		
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
+		<div id='details_modal' class='modal fade'>
+			<div class='modal-dialog'>
+				<div class='modal-content'>
+					<div class='modal-header'>
+						<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+						<h4 class='modal-title'>Amhacks Details</h4>
+					</div>
+					<div class='modal-body'>
+						<p><a href='/static/img/map.jpg' target='_blank'><img class='img-responsive img-rounded' src='/static/img/map.jpg'/></a></p>
+						
+						<h4>Thursday June 19th</h4>
+						<p>3:40pm: Depart from New York (Penn Station) on the Lake Shore Limited</p>
+						
+						<h4>Friday June 20th</h4>
+						<p>
+							9:45am: Arrive at Chicago (Union Station)<br/>
+							9:50am: Challenge - Git commit from the Sears Tower<br/>
+							2:00pm: Depart from Chicago (Union Station) on the California Zephyr
+						</p>
+						
+						<h4>Sunday June 22th</h4>
+						<p>4:10am: Arrive at San Francisco (Emeryville Station)</p>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 		<script src='/static/lib/bootstrap/js/bootstrap.min.js'></script>
 	</body>
