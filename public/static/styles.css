@@ -20,9 +20,12 @@
 html,
 body {
 	height: 100%;
-	background: url('/static/img/background.jpg') center center;
-	background-attachment: fixed;
+	background: url('/static/img/background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+	
 	font-family: 'Gafata', sans-serif;
 }
 body {
