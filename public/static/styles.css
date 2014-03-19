@@ -22,7 +22,7 @@ body {
 	height: 100%;
 }
 body {
-	background: #151515 url('/static/img/background.jpg') no-repeat center center fixed;
+	background: #151515 url('./img/background.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -126,6 +126,14 @@ body {
 .cover .btn-lg {
 	padding: 10px 20px;
 	font-weight: bold;
+}
+
+.cover img {
+	width: 100%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 36px;
 }
 
 #apply_modal .form-control {
