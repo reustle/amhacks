@@ -96,13 +96,13 @@ body {
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
 	background-color: transparent;
-	border-bottom-color: rgba(255,255,255,.25);
+	border-bottom-color: #FC3C1E;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
 	color: #fff;
-	border-bottom-color: #fff;
+	border-bottom-color: #FC3C1E;
 }
 
 @media (min-width: 768px) {
