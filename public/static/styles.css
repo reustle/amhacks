@@ -129,11 +129,14 @@ a:hover {
 
 .cover {
 	padding: 0 36px;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1),
+		0px 0px 5px rgba(0, 0, 0, 1);
 }
 .cover .btn-lg {
 	padding: 10px 40px;
 	border-radius: 3px;
 	font-size: 22px;
+	text-shadow: none;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 100;
