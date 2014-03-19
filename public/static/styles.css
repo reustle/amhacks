@@ -123,6 +123,16 @@ a:hover {
 	}
 }
 
+.social_tw {
+	width: 26px;
+	height: 26px;
+	background: url('./img/social.jpg') center left no-repeat;
+}
+.social_fb {
+	width: 26px;
+	height: 26px;
+	background: url('./img/social.jpg') center right no-repeat;
+}
 
 /*
  * Cover
