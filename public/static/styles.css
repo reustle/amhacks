@@ -30,6 +30,14 @@ body {
 	font-family: 'Gafata', sans-serif;
 }
 
+a {
+	color: #FC3C1E;
+}
+
+a:hover {
+	color: #C11B14;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
 	color: #fff;
@@ -152,6 +160,11 @@ body {
 	margin-bottom: 36px;
 }
 
+.modal-header,
+.modal-footer {
+	border: none;
+}
+
 #apply_modal .form-control {
 	margin-bottom: 10px;
 }
@@ -164,6 +177,19 @@ body {
 	margin-top: 0px;
 }
 
+#apply_modal .modal-footer .btn {
+	background: #FC3C1E;
+	border: none;
+	width: 100%;
+	padding: 15px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#apply_modal .modal-footer .btn:hover {
+	background: #C11B14;
+}
 
 /*
  * Footer
