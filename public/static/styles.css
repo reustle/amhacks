@@ -129,9 +129,10 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 100;
-	background: #FC3C1E;
+	background: none;
 	border-color: #FC3C1E;
-	text-shadow: 0px 1px 1px #C11B14;
+	-webkit-transition:background-color 0.2s ease-out;
+	transition:background-color background-color 0.2s ease-out;
 }
 
 .cover .btn-lg:hover {
