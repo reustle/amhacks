@@ -73,6 +73,10 @@ a:hover {
 .apply_form {
 }
 
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
 .row>div>h3 {
 	text-transform: uppercase;
 	text-align: center;
