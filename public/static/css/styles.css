@@ -72,6 +72,12 @@ a:hover {
 .apply_form {
 }
 
+.row>div>h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 34px;
+}
+
 /* Padding for spacing */
 .inner {
 	padding: 30px;
