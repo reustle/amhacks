@@ -22,11 +22,7 @@ body {
 	height: 100%;
 }
 body {
-	background: #151515 url('./img/background.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	
 	font-family: 'Gafata', sans-serif;
 }
 
@@ -48,6 +44,12 @@ a:hover {
 	width: 100%;
 	height: 100%; /* For at least Firefox */
 	min-height: 100%;
+
+	background: #151515 url('../img/background.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 	.site-wrapper a,
@@ -65,6 +67,11 @@ a:hover {
 	margin-left: auto;
 }
 
+.learn_more {
+}
+.apply_form {
+}
+
 /* Padding for spacing */
 .inner {
 	padding: 30px;
@@ -72,56 +79,11 @@ a:hover {
 .inner h1 {
 	font-size: 48px;
 }
-.inner .lead {
+.inner .lead btn {
 	font-size: 24px;
 	line-height: 1.7;
 }
 
-
-/*
- * Header
- */
-.masthead-brand {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-	display: inline-block;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.masthead-nav > li + li {
-	margin-left: 20px;
-}
-.masthead-nav > li > a {
-	padding-right: 0;
-	padding-left: 0;
-	font-size: 16px;
-	font-weight: bold;
-	color: #fff; /* IE8 proofing */
-	color: rgba(255,255,255,.75);
-	border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-	background-color: transparent;
-	border-bottom-color: #FC3C1E;
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-	color: #fff;
-	border-bottom-color: #FC3C1E;
-}
-
-@media (min-width: 768px) {
-	.masthead-brand {
-		float: left;
-	}
-	.masthead-nav {
-		float: right;
-	}
-}
 
 .social_tw {
 	width: 26px;
@@ -175,24 +137,15 @@ a:hover {
 	margin-bottom: 36px;
 }
 
-.modal-header,
-.modal-footer {
-	border: none;
-}
-
-#apply_modal .form-control {
+.apply_form .form-control {
 	margin-bottom: 10px;
 }
 
-#apply_modal .form-control:last-child {
+.apply_form .form-control:last-child {
 	margin-bottom: 0px;
 }
 
-#apply_modal .modal-footer {
-	margin-top: 0px;
-}
-
-#apply_modal .modal-footer .btn {
+.apply_form .btn {
 	background: #FC3C1E;
 	border: none;
 	width: 100%;
@@ -202,7 +155,7 @@ a:hover {
 	letter-spacing: 1px;
 }
 
-#apply_modal .modal-footer .btn:hover {
+#apply_modal .btn:hover {
 	background: #C11B14;
 }
 
@@ -210,9 +163,9 @@ a:hover {
  * Footer
  */
 
-.mastfoot {
-	color: #999; /* IE8 proofing */
-	color: rgba(255,255,255,.5);
+.footer {
+	color: #999;
+	text-align: center;
 }
 
 
@@ -221,30 +174,17 @@ a:hover {
  */
 
 @media (min-width: 768px) {
-	/* Pull out the header and footer */
-	.masthead {
-		position: fixed;
-		top: 0;
-	}
-	.mastfoot {
-		position: fixed;
-		bottom: 0;
-	}
 	/* Start the vertical centering */
 	.site-wrapper-inner {
 		vertical-align: middle;
 	}
 	/* Handle the widths */
-	.masthead,
-	.mastfoot,
 	.cover-container {
 		width: 100%; /* Must be percentage or pixels for horizontal alignment */
 	}
 }
 
 @media (min-width: 992px) {
-	.masthead,
-	.mastfoot,
 	.cover-container {
 		width: 700px;
 	}
