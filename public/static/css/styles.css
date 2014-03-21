@@ -34,6 +34,10 @@ a:hover {
 	color: #C11B14;
 }
 
+.centered {
+	text-align: center;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
 	color: #fff;
