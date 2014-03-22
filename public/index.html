@@ -44,8 +44,7 @@
 	<body>
 		
 		<!-- Hello Amhacker. This code is horrifying, don't judge :) -->
-		
-		<div class='panel-land'>
+		<div class='panel-land' id="home">
 			<div class='v-center'>
 				<div class='h-center'>
 					
@@ -60,8 +59,19 @@
 				</div>
 			</div>
 		</div>
+		<div id="header">
+		    <div class="container">
+    		    <a href="#home"><img src='./static/img/logo_invert.png' alt='Amhacks'/></a>
+    		    <ul>
+    		        <li><a href="#what">What</a></li>
+    		        <li><a href="#how">How</a></li>
+    		        <li><a href="#apply" class="btn">Apply now</a></li>
+    		    </ul>
+		    </div>
+		</div>
 		
 		<div class='panel-what container-fluid'>
+		    <span class="anchor" id="what"></span>
 				<div class='content'>
 						<h1>What is Amhacks?</h1>
 						
@@ -72,6 +82,7 @@
 		</div>
 		
 		<div class='panel-how container-fluid'>
+		    <span class="anchor" id="how"></span>
 				<div class='content'>
 					
 					<h1>How does it work?</h1>
@@ -101,8 +112,8 @@
     				<div id='map'></div>
 			    </div>
 		</div>
-		
 		<div class='panel-apply container-fluid'>
+		    <span class="anchor" id="apply"></span>
 			<div class='container'>
 				<div class='row'>
 					<div class='content col-lg-10 col-lg-offset-1'>

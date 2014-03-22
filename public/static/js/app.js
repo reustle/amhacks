@@ -60,6 +60,18 @@ $('.application-complete').hide();
 $(document).on('ready', function(){
     map = L.mapbox.map('map', 'ruidacosta.hjamk02c');
     $(window).trigger('resize');
+    
+    $('a[href^="#"]').click(function(e) {
+        var href = $(this).attr('href').toString();
+        if($(href).length == 1){
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+        }
+    });
 });
 $(window).on('resize', function(){
     map.fitBounds([
@@ -67,4 +79,12 @@ $(window).on('resize', function(){
         [18.062312304546726, -131.30859375]
     ]);
     map.scrollWheelZoom.disable();
+});
+$(window).on('scroll', function(){
+    if($(window).scrollTop() > $('#home').outerHeight()){
+        $('#header').addClass('fixed');
+    }
+    else {
+        $('#header').removeClass('fixed');
+    }
 });
