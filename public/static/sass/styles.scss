@@ -126,6 +126,10 @@ p {
     @media (min-width: 756px){
         display: block;
         @include default;
+        text-align: left;
+        img {
+            @include inline-block;
+        }
     }
 }
 [class^=panel]{
