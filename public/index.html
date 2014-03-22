@@ -29,9 +29,10 @@
 		
 		<link rel='shortcut icon' href='./static/img/favicon.ico'>
 		<link href='./static/lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-		
 		<link href='./static/css/styles.css' rel='stylesheet'>
+		
+		<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -54,52 +55,51 @@
 					
 					<p class='lead'>Amhacks is a 75 hour, 3,397 mile hackathon which takes place aboard the California Zephyr. The journey begins in New York City on Thursday June 19th and ends in San Francisco on Sunday June 22nd. You're about to embark on the most scenic hack session of your life.</p>
 					
-					<a href='#apply' class='btn btn-lg'>Learn More</a>
+					<a href='#apply' class='btn btn-lg'>Apply now</a>
 						
 				</div>
 			</div>
 		</div>
 		
-		<div class='panel-what container'>
-			<div class='row'>
-				<div class='content col-lg-10 col-lg-offset-1'>
-					
-					<div class='body col-md-7'>
-						
+		<div class='panel-what container-fluid'>
+				<div class='content'>
 						<h1>What is Amhacks?</h1>
 						
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio quam, vestibulum id felis ornare, lobortis scelerisque orci. Vivamus vitae nisi tortor. Duis eu leo congue, pretium magna quis, volutpat erat. Pellentesque felis turpis, egestas eu nunc in, vestibulum porta nisl.</p>
 						<p>In pretium consectetur dui, commodo dapibus dui ultrices sagittis. Pellentesque est velit, blandit sed adipiscing sed, commodo nec justo. Curabitur nec mi odio. Aliquam vehicula aliquet interdum. Sed at tristique sem. Morbi eget erat egestas, tincidunt felis at, dignissim nunc. Praesent in venenatis ipsum, id bibendum leo.</p>
-					</div>
-					
-					<div class='imgs col-md-5'>
-						<a href='#'><img src='./static/img/view.jpg' class='img-rounded img-responsive'/></a>
-					</div>
-					
 				</div>
-			</div>
+				<div class='laptop'></div>
 		</div>
 		
 		<div class='panel-how container-fluid'>
-			<div class='container'>
-				<div class='row'>
-					<div class='content col-lg-10 col-lg-offset-1'>
-						
-						<div class='col-md-7'>
-							
-							<h1>How does it work?</h1>
-							
-							<p>This is where details go</p>
-							<em>Notice: This is a tentative plan. Stay updated on <a href='http://twitter.com/amhacks' target='_blank'>twitter</a> and <a href='http://facebook.com/rideamhacks' target='_blank'>facebook</a></em>
-						</div>
-						
-						<div class='map col-md-5'>
-							<a href='#'><img class='img-responsive img-rounded' src='./static/img/map.jpg'/></a></p>
-						</div>
-						
-					</div>
+				<div class='content'>
+					
+					<h1>How does it work?</h1>
+					<h4>Thursday June 19th</h4>
+					<ul>
+					    <li>3:40pm: Depart from New York (Penn Station) on the Lake Shore Limited</li>
+					</ul>
+					<h4>Friday June 20th</h4>
+					<ul>
+					    <li>9:45am: Arrive at Chicago (Union Station)</li>
+					    <li>9:50am: Commit code from the top of the Sears Tower (now Willis Tower)</li>
+					    <li>2:00pm: Depart from Chicago (Union Station) on the California Zephyr</li>
+					</ul>
+					<h4>Saturday June 21st</h4>
+					<ul>
+					    <li>7:20am: Begin ascent into Rocky Mountains</li>
+					</ul>
+					<h4>Sunday June 22nd</h4>
+					<ul>
+					    <li>4:10pm: Arrive at San Francisco (Emeryville Station)</li>
+					    <li>6:00pm: Dinner and demos at TBA</li>
+					</ul>
+					
+					<em>Notice: This is a tentative plan. Stay updated on <a href='http://twitter.com/amhacks' target='_blank'>twitter</a> and <a href='http://facebook.com/rideamhacks' target='_blank'>facebook</a></em>
 				</div>
-			</div>
+				<div class="map">
+    				<div id='map'></div>
+			    </div>
 		</div>
 		
 		<div class='panel-apply container-fluid'>

@@ -1,28 +1,33 @@
-/* line 3, ../sass/styles.scss */
+@import 'http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900';
+/* line 29, ../sass/styles.scss */
 html {
   height: 100%;
 }
 
-/* line 7, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 body {
   height: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-weight: 300;
 }
 
-/* line 12, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 h1 {
-  text-transform: uppercase;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 2.25em;
+  margin: .5em 0;
 }
 
-/* line 18, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1em;
+  line-height: 1.9em;
+  margin: 1em 0;
 }
 
-/* line 24, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .panel-land {
   color: #fff;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
@@ -37,24 +42,26 @@ p {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 39, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .panel-land a, .panel-land a:focus, .panel-land a:hover {
   color: #fff;
 }
-/* line 43, ../sass/styles.scss */
+/* line 73, ../sass/styles.scss */
 .panel-land .v-center {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
-/* line 48, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .panel-land .v-center .h-center {
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
-  padding: 30px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
-/* line 55, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 .panel-land .v-center .h-center .logo-container {
   background: #fff;
   padding: 6px;
@@ -63,122 +70,250 @@ p {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 65, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 .panel-land .v-center .h-center .logo-container img {
   width: 100%;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
-/* line 73, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .panel-land .v-center .h-center p {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8), 0px 1px 1px rgba(0, 0, 0, 0.8);
+  font-weight: 100;
 }
-/* line 77, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .panel-land .v-center .h-center .btn {
-  font-size: 24px;
-  line-height: 1.7;
-  padding: 10px 40px;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: .25em 2em;
   margin-top: 16px;
-  border-radius: 3px;
-  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.25em;
   text-shadow: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: 400;
-  background: none;
-  border-color: #FC3C1E;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8), 0px 1px 1px rgba(0, 0, 0, 0.8);
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color background-color 0.2s ease-out;
+  background-color: #268b26;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
+  background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
+  background-image: linear-gradient(#268b26, #40a540, #5abf5a);
+  background-size: 100% 200%;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0px -1px 0px rgba(0, 0, 0, 0.8) inset;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
-/* line 95, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
 .panel-land .v-center .h-center .btn:hover {
-  background: #D81E17;
-  border-color: #D81E17;
-  text-shadow: none;
+  background-position: 0 100%;
 }
 @media (min-width: 756px) {
-  /* line 105, ../sass/styles.scss */
+  /* line 116, ../sass/styles.scss */
   .panel-land .h-center {
     width: 700px;
   }
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
+.panel-what {
+  position: relative;
+}
+/* line 126, ../sass/styles.scss */
 .panel-what .content {
-  padding: 20px 0px;
-}
-/* line 117, ../sass/styles.scss */
-.panel-what .content .imgs {
-  padding-top: 10px;
-}
-/* line 121, ../sass/styles.scss */
-.panel-what .content .imgs img {
-  border: 3px solid #000;
-}
-
-/* line 128, ../sass/styles.scss */
-.panel-how {
-  padding: 20px 0px;
-  background: #eee;
+  padding: 30px 30px 60px 30px;
+  max-width: 570px;
+  float: right;
+  margin-right: 50%;
 }
 /* line 132, ../sass/styles.scss */
-.panel-how .content {
-  padding: 0px;
+.panel-what .laptop {
+  position: absolute;
+  left: 52%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin-top: 0;
+  background: url("../img/laptop.png") no-repeat left center;
+  background-size: auto 90%;
 }
-/* line 136, ../sass/styles.scss */
-.panel-how .content .map {
-  padding-top: 10px;
+@media (min-width: 0px) {
+  /* line 146, ../sass/styles.scss */
+  .panel-what .laptop {
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    margin-right: 0;
+    height: 250px;
+    left: 0;
+  }
+  /* line 154, ../sass/styles.scss */
+  .panel-what .content {
+    margin-right: auto;
+    max-width: 100%;
+    float: none;
+    padding: 10px 10px 20px 10px;
+  }
 }
-/* line 140, ../sass/styles.scss */
-.panel-how .content .map img {
-  border: 3px solid #000;
+@media (min-width: 991px) {
+  /* line 126, ../sass/styles.scss */
+  .panel-what .content {
+    padding: 30px 30px 60px 30px;
+    max-width: 570px;
+    float: right;
+    margin-right: 50%;
+  }
+  /* line 132, ../sass/styles.scss */
+  .panel-what .laptop {
+    position: absolute;
+    left: 52%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    margin-top: 0;
+    background: url("../img/laptop.png") no-repeat left center;
+    background-size: auto 90%;
+  }
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
+.panel-how {
+  background: #eee;
+  position: relative;
+}
+/* line 171, ../sass/styles.scss */
+.panel-how .map {
+  position: absolute;
+  width: 48%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin-top: 0;
+}
+/* line 180, ../sass/styles.scss */
+.panel-how .map #map {
+  width: 100%;
+  height: 100%;
+}
+/* line 186, ../sass/styles.scss */
+.panel-how .content {
+  margin-left: 50%;
+  padding: 30px 30px 60px 30px;
+  max-width: 570px;
+}
+/* line 190, ../sass/styles.scss */
+.panel-how .content ul {
+  font-size: .85em;
+}
+@media (min-width: 0px) {
+  /* line 197, ../sass/styles.scss */
+  .panel-how .map {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  /* line 202, ../sass/styles.scss */
+  .panel-how .content {
+    margin-left: auto;
+    max-width: 100%;
+    padding: 10px 10px 20px 10px;
+  }
+}
+@media (min-width: 991px) {
+  /* line 166, ../sass/styles.scss */
+  .panel-how {
+    background: #eee;
+    position: relative;
+  }
+  /* line 171, ../sass/styles.scss */
+  .panel-how .map {
+    position: absolute;
+    width: 48%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    margin-top: 0;
+  }
+  /* line 180, ../sass/styles.scss */
+  .panel-how .map #map {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 186, ../sass/styles.scss */
+  .panel-how .content {
+    margin-left: 50%;
+    padding: 30px 30px 60px 30px;
+    max-width: 570px;
+  }
+  /* line 190, ../sass/styles.scss */
+  .panel-how .content ul {
+    font-size: .85em;
+  }
+}
+
+/* line 213, ../sass/styles.scss */
 .panel-apply {
   padding: 10px 0px 30px 0px;
 }
-/* line 152, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .panel-apply .content form {
   margin-left: -15px;
   margin-right: -15px;
 }
-/* line 157, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .panel-apply .content form input {
   margin-bottom: 10px;
 }
-/* line 161, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 .panel-apply .content form .btn-container {
   text-align: center;
 }
-/* line 164, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .panel-apply .content form .btn-container .btn {
-  background: #FC3C1E;
-  border: none;
-  width: 100%;
-  padding: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: .25em 2em;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.25em;
+  text-shadow: none;
+  font-weight: 400;
+  background-color: #268b26;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
+  background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
+  background-image: linear-gradient(#268b26, #40a540, #5abf5a);
+  background-size: 100% 200%;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0px -1px 0px rgba(0, 0, 0, 0.8) inset;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
-/* line 176, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
+.panel-apply .content form .btn-container .btn:hover {
+  background-position: 0 100%;
+}
+/* line 236, ../sass/styles.scss */
 .panel-apply .content .application-complete {
   text-align: center;
   font-weight: 700;
 }
 
-/* line 183, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 .panel-sponsors {
   padding: 10px 0px 25px 0px;
   background: #eee;
 }
-/* line 187, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .panel-sponsors .content {
   padding: 0px;
 }
-/* line 191, ../sass/styles.scss */
+/* line 251, ../sass/styles.scss */
 .panel-sponsors .content a {
   display: block;
   height: 100px;
@@ -195,7 +330,7 @@ p {
   border-radius: 4px;
 }
 
-/* line 212, ../sass/styles.scss */
+/* line 272, ../sass/styles.scss */
 .panel-sitefooter {
   text-align: center;
   background: #222;
