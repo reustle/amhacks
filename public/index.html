@@ -6,11 +6,11 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 		<!-- Core Meta Data -->
 		<meta name='author' content='Shane Reustle'>
-		<meta name='description' content='Amhacks is a scenic 75 hour hackathon from New York to San Francisco aboard Amtrak'>
+		<meta name='description' content='Amhacks is a 4 day, transcontinental hackathon from New York to San Francisco aboard Amtrak'>
 		<meta name='keywords' content='amhacks, Amtrack Hackathon'>
 
 		<!-- Open Graph Meta Data -->
-		<meta property='og:description' content='Amhacks is a scenic 75 hour hackathon from New York to San Francisco aboard Amtrak'>
+		<meta property='og:description' content='Amhacks is a 4 day, transcontinental hackathon from New York to San Francisco aboard Amtrak'>
 		<meta property='og:image' content='http://amhacks.com/static/img/og_image.jpg'>
 		<meta property='og:site_name' content='Amhacks'>
 		<meta property='og:title' content='Amhacks'>
@@ -22,16 +22,17 @@
 		<meta name='twitter:site' content='http://amhacks.com'>
 		<meta name='twitter:creator' content='@amhacks'>
 		<meta name='twitter:title' content='Amhacks'>
-		<meta name='twitter:description' content='Amhacks is a 75 hour hackathon from New York to San Francisco aboard Amtrak'>
+		<meta name='twitter:description' content='Amhacks is a 4 day, transcontinental hackathon from New York to San Francisco aboard Amtrak'>
 		<meta name='twitter:image' content='http://amhacks.com/static/img/og_image.jpg'>
 		
 		<title>Amhacks | A scenic 75 hour hackathon from New York to San Francisco aboard Amtrak</title>
 		
 		<link rel='shortcut icon' href='./static/img/favicon.ico'>
 		<link href='./static/lib/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
-		<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
-		
 		<link href='./static/css/styles.css' rel='stylesheet'>
+		
+		<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -43,88 +44,147 @@
 	<body>
 		
 		<!-- Hello Amhacker. This code is horrifying, don't judge :) -->
-		
-		<div class='site-wrapper'>
-			<div class='site-wrapper-inner'>
-				<div class='cover-container'>
+		<div class='panel-land' id="home">
+			<div class='v-center'>
+				<div class='h-center'>
 					
-					<div class='inner cover'>
-						<img src='./static/img/logo.png'>
-						<p class='lead'>Amhacks is a 75 hour, 3,397 mile hackathon which takes place aboard the California Zephyr. The journey begins in New York City on Thursday June 19th and ends in San Francisco on Sunday June 22nd. You're about to embark on the most scenic hack session of your life.</p>
-						<p class='lead'>
-							<a href='#apply' class='btn btn-lg btn-primary' id='main_btn_apply'>Apply To Ride</a>
-							<br/>or <a href='#learn' id='btn_learn_more'>learn more</a>
-						</p>
+					<div class='logo-container'>
+						<img src='./static/img/logo.png' alt='Amhacks'/>
+					</div>
+					
+					<p class='lead'>Amhacks is a 75 hour, 3,397 mile transcontinental hackathon which takes place aboard the California Zephyr. The journey begins in New York City on Thursday June 19th and ends in San Francisco on Sunday June 22nd. You're about to embark on the most scenic hack session of your life.</p>
+					
+					<a href='#apply' class='btn btn-lg'>Apply now</a>
+					<br/>or <a href='#what'>learn more</a>
+						
+				</div>
+			</div>
+		</div>
+		<div id="header">
+			<div class="container">
+				<a href="#home"><img src='./static/img/logo_invert.png' alt='Amhacks'/></a>
+				<ul>
+					<li><a href="#what">What</a></li>
+					<li><a href="#how">How</a></li>
+					<li><a href="#apply" class="btn">Apply now</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class='panel-what container-fluid'>
+			<span class="anchor" id="what"></span>
+				<div class='content'>
+						<h1>What is Amhacks?</h1>
+						
+						<p>Amhacks is a 4 day, transcontinental hackathon which starts in New York City and ends in San Francisco. During the event, you'll find yourself building incredible products and strong relationships. Our train will float through some of the most scenic areas of the country, giving you something nice to look at while your code is compiling.</p>
+						<p>The trip will in mid June, and the final details are still being ironed out. Keep up to date on <a href='http://twitter.com/amhacks' target='_blank'>twitter</a> and <a href='http://facebook.com/rideamhacks' target='_blank'>facebook</a>.</p>
+				</div>
+				<div class='laptop'></div>
+		</div>
+		
+		<div class='panel-how container-fluid'>
+			<span class="anchor" id="how"></span>
+				<div class='content'>
+					
+					<h1>How does it work?</h1>
+					<em>Dates subject to change, will be locked in shortly</em>
+					<h4>Thursday June 19th</h4>
+					<ul>
+						<li>Depart from New York (Penn Station) on the Lake Shore Limited</li>
+					</ul>
+					<h4>Friday June 20th</h4>
+					<ul>
+						<li>Swing by Chicago (Union Station) and transfer to the California Zephyr</li>
+					</ul>
+					<h4>Saturday June 21st</h4>
+					<ul>
+						<li>Begin ascent into Rocky Mountains as the sun rises</li>
+					</ul>
+					<h4>Sunday June 22nd</h4>
+					<ul>
+						<li>Arrive at San Francisco (Emeryville Station)</li>
+						<li>Dinner and Demos!</li>
+					</ul>
+					
+				</div>
+				<div class="map">
+					<div id='map'></div>
+				</div>
+		</div>
+		<div class='panel-apply container-fluid'>
+			<span class="anchor" id="apply"></span>
+			<div class='container'>
+				<div class='row'>
+					<div class='content col-lg-10 col-lg-offset-1'>
+						
+						<h1>Apply to Ride</h1>
+						
+						<p>You are responsible for planning your own return trip, as this is a one-way adventure. If you have any other questions, feel free to <a href='mailto:me@shanereustle.com'>shoot me an email</a>.</p>
+						
+						<form role='form' class='form-horizontal'>
+							
+							<div class='col-md-6'>
+								<input id='form_name' name='NAME' placeholder='Your Name' tabindex='1' type='text' class='form-control'/>
+								<input id='form_twitter' name='TWITTER' placeholder='Twitter Handle' tabindex='3' type='text' class='form-control'/>
+							</div>
+							
+							<div class='col-md-6'>
+								<input id='form_email' name='EMAIL' placeholder='Email Address' tabindex='2' type='email' class='form-control'/>
+								<input id='form_github' name='GITHUB' placeholder='GitHub Username' tabindex='4' type='text' class='form-control'/>
+							</div>
+							
+							<div class='col-md-12'>
+								<input id='form_hack' name='HACK' placeholder='Your coolest hack (link)' tabindex='5' type='text' class='form-control'/>
+								
+								<div class='btn-container'>
+									<button type='button' class='btn btn-lrg btn-primary' tabindex='6'>Submit Application</button>
+								</div>
+							</div>
+							
+						</form>
+						
+						<div class='application-complete col-md-6 col-md-offset-3'>
+							<p>Great, you're almost finished! We just need to confirm your email address. Please click the link in the email we just sent you. See you soon!</p>
+						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class='learn_more row'>
-			<div class='col-lg-6 col-lg-offset-3'>
-				
-				<a name='learn'></a>
-				<h3>Trip Details</h3>
-				
-				<p><a href='/static/img/map.jpg' target='_blank'><img class='img-responsive img-rounded' src='./static/img/map.jpg'/></a></p>
-				
-				<em>Notice: This is a tentative plan. Stay updated on <a href='http://twitter.com/amhacks' target='_blank'>twitter</a> and <a href='http://facebook.com/rideamhacks' target='_blank'>facebook</a></em>
-				
-				<h4>Thursday June 19th</h4>
-				<p>3:40pm: Depart from New York (Penn Station) on the Lake Shore Limited</p>
-				
-				<h4>Friday June 20th</h4>
-				<p>
-					9:45am: Arrive at Chicago (Union Station)<br/>
-					9:50am: Commit code from the top of the Sears Tower (now Willis Tower)<br/>
-					2:00pm: Depart from Chicago (Union Station) on the California Zephyr
-				</p>
-				
-				<h4>Saturday June 21st</h4>
-				<p>
-					7:20am: Begin ascent into Rocky Mountains
-				</p>
-				
-				<h4>Sunday June 22nd</h4>
-				<p>
-					4:10pm: Arrive at San Francisco (Emeryville Station)<br/>
-					6:00pm: Dinner and demos at <em>TBA</em>
-				</p>
-				
-			</div>
-		</div>
-		
-		<div id='zephyr_nv'></div>
-		
-		<div class='apply_form row'>
-			<div class='col-md-6 col-md-offset-3'>
-				
-				<a name='apply'></a>
-				<h3>Apply to Ride</h3>
-			
-				<p><a href='http://www.flickr.com/photos/locosteve/' target='_blank'><img class='img-responsive img-rounded' src='./static/img/view.jpg'/></a></p>
-				
-				<p>You are responsible for planning your own return trip, as this is a one-way adventure. If you have any other questions, feel free to <a href='mailto:me@shanereustle.com'>shoot me an email</a>.</p>
-				
-				<form role='form' class='form-horizontal' id='apply_form'>
-					<input type='text' class='form-control' id='form_name' name='NAME' placeholder='Your Name'/>
-					<input type='email' class='form-control' id='form_email' name='EMAIL' placeholder='Email Address'/>
-					<input type='text' class='form-control' id='form_twitter' name='TWITTER' placeholder='Twitter Handle'/>
-					<input type='text' class='form-control' id='form_github' name='GITHUB' placeholder='GitHub Username'/>
-					<input type='text' class='form-control' id='form_hack' name='HACK' placeholder='Your coolest hack (link)'/>
-					
-					<button type="button" id="btn_apply" class="btn btn-lrg btn-primary">Submit Application</button>
-					
-					<div class='centered'>
-						<br/><br/>
-						<h4 class='lead'>Stay up to date with <a href='http://twitter.com/amhacks' target='_blank'>twitter</a> and <a href='http://facebook.com/rideamhacks' target='_blank'>facebook</a></h4>
+		<div class='panel-sponsors container-fluid'>
+			<div class='container'>
+				<div class='row'>
+					<div class='content col-lg-10 col-lg-offset-1'>
+						
+						<div class='col-md-12'>
+							
+							<h1>We <i class='glyphicon glyphicon-heart'></i> our Sponsors!</h1>
+							
+							<div class='col-md-4'>
+								<a href='mailto:me@shanereustle.com'>Sponsor</a>
+								<a href='mailto:me@shanereustle.com'>Sponsor</a>
+							</div>
+							
+							<div class='col-md-4'>
+								<a href='me@shanereustle.com'>Sponsor</a>
+								<a href='me@shanereustle.com'>Sponsor</a>
+							</div>
+							
+							<div class='col-md-4'>
+								<a href='me@shanereustle.com'>Sponsor</a>
+								<a href='me@shanereustle.com'>Sponsor</a>
+							</div>
+							
+						</div>
+						
 					</div>
-				</form>
-			
+				</div>
 			</div>
 		</div>
-
-		<div class='footer'>
+	
+	
+		<div class='panel-sitefooter'>
 			<p>&copy; 2014 Amhacks &minus; Conducted by <a href='http://twitter.com/reustle' target='_blank'>Shane Reustle</a> &minus; Powered by diesel fuel and Red Bull</p>
 		</div>
 					

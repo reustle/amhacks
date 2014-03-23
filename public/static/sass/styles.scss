@@ -1,0 +1,376 @@
+// Globals
+@import 'bourbon';
+@import 'http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900';
+
+$buttonBG1: #268b26;
+$buttonBG2: #40a540;
+$buttonBG3: #5abf5a;
+$headerSize: 80px;
+$headerPad: 20px;
+
+@mixin button {
+    font-size: 1.5em;
+    line-height: 2em;
+    padding: .2em 2em;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.25em;
+    text-shadow: none;
+    font-weight: 400;
+    color: #fff;
+    @include linear-gradient($buttonBG1, $buttonBG2, $buttonBG3);
+    background-size: 100% 200%;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(255,255,255,.2) inset, 0px -1px 0px rgba(0, 0, 0, 0.8) inset;
+    @include transition(all 0.2s ease-out);
+    
+    &:hover {
+        background-position: 0 100%;
+        color: #fff;
+    }
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-weight: 300;
+    
+    @media (min-width: 0px){
+        font-size: 14px;
+    }
+    @media (min-width: 991px){
+        font-size: 18px;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.25em;
+    margin: .5em 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.9em;
+    margin: 1em 0;
+}
+
+#header {
+    @mixin default{
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: $headerSize;
+        padding: $headerPad 0;
+        @include box-sizing(border-box);
+        z-index: 100;
+        
+        &.fixed {
+            top: 0;
+            bottom: auto;
+            position: fixed;
+        }
+        
+        img {
+            height: $headerSize - (2*$headerPad);
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @include inline-block;
+            float: right;
+            line-height: $headerSize - (2*$headerPad);
+            
+            li {
+                @include inline-block;
+                
+                a {
+                    @include inline-block;
+                    color: #fff;
+                    margin-left: 2em;
+                    @include transition(all .25s);
+                    &:hover {
+                        color: $buttonBG3;
+                        text-decoration: none;
+                    }
+                    
+                    &.btn {
+                        @include button;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    @include default;
+    @media (min-width: 0px){
+        $headerSize: 60px;
+        $headerPad: 10px;
+        @include default;
+        text-align: center;
+        img {
+            display: none;
+        }
+        ul {
+            float: none;
+        }
+    }
+    @media (min-width: 756px){
+        display: block;
+        @include default;
+        text-align: left;
+        img {
+            @include inline-block;
+        }
+    }
+}
+[class^=panel]{
+    position: relative;
+    z-index: 1;
+    
+    .anchor {
+        position: absolute;
+        top: -$headerSize + 1;
+    }
+}
+
+// Panels
+.panel-land {
+    margin-bottom: $headerSize;
+    z-index: 10;
+    color: #fff;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+    
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    
+    background: #151515 url('../img/background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    a, a:focus, a:hover {
+        color: #fff;
+    }
+    
+    .v-center {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        
+        .h-center {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+            padding: 40px;
+            background: rgba(0,0,0,.5);
+            border-radius: 5px;
+            
+            .logo-container {
+                
+                background: #fff;
+                padding: 6px;
+                margin-bottom: 36px;
+                
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                
+                img {
+                    width: 100%;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+            
+            p {
+                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8), 0px 1px 1px rgba(0, 0, 0, 0.8);
+                font-weight: 100;
+            }
+            
+            .btn {
+                @include button;
+                margin-top: 16px;
+            }
+        }
+    }
+    @media (min-width:0px){
+        
+    }
+    @media (min-width: 756px){
+        margin-bottom: $headerSize;
+        .h-center {
+            width: 700px;
+        }
+    }
+    
+}
+
+.panel-what {
+    position: relative;
+    @mixin default {
+        .content {
+            padding: 30px 30px 60px 30px;
+            max-width: 570px;
+            float: right;
+            margin-right: 50%;
+        }
+        .laptop {
+            position: absolute;
+            left: 52%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            margin-top: 0;
+            background: url('../img/laptop.png') no-repeat left center;
+            background-size: auto 90%;
+        }
+    }
+    @include default;
+    @media (min-width: 0px){
+        .laptop {
+            background-position: center top;
+            background-size: cover;
+            position: relative;
+            margin-right: 0;
+            height: 200px;
+            left: 0;
+        }
+        .content {
+            margin-right: auto;
+            max-width: 100%;
+            float: none;
+            padding: 10px 10px 20px 10px;
+        }
+    }
+    @media (min-width: 991px){
+        @include default;
+    }
+}
+
+.panel-how {
+    @mixin default{
+        background: #eee;
+        position: relative;
+        
+        .map {
+            position: absolute;
+            width: 48%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            margin-top: 0;
+            
+            #map {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .content {
+            margin-left: 50%;
+            padding: 30px 30px 60px 30px;
+            max-width: 570px;
+            ul {
+                font-size: .85em;
+            }
+        }
+    }
+    @include default;
+    @media (min-width: 0px){
+        .map {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .content {
+            margin-left: auto;
+            max-width: 100%;
+            padding: 10px 10px 20px 10px;
+        }
+    }
+    @media (min-width: 991px){
+        @include default;
+    }
+}
+
+.panel-apply {
+    padding: 10px 0px 30px 0px;
+    
+    .content {
+        
+        form {
+            
+            margin-left: -15px;
+            margin-right: -15px;
+            
+            input {
+                margin-bottom: 10px;
+            }
+            
+            .btn-container {
+                text-align: center;
+                
+                .btn {
+                    @include button;
+                }
+            }
+        }
+        
+        .application-complete {
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
+
+.panel-sponsors {
+    padding: 10px 0px 25px 0px;
+    background: #eee;
+    
+    .content {
+        
+        padding: 0px;
+        
+        a {
+            display: block;
+            height: 100px;
+            width: 100%;
+            background: #fff;
+            margin-top: 20px;
+            border: 3px solid #000;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 22px;
+            color: #000;
+            
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            
+        }
+        
+    }
+}
+
+.panel-sitefooter {
+    text-align: center;
+    background: #222;
+    color: #eee;
+    padding: 10px;
+}
+
