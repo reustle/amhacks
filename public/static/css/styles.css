@@ -69,28 +69,16 @@ p {
   margin: 0;
   padding: 0;
   display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
   float: right;
   line-height: 40px;
 }
 /* line 92, ../sass/styles.scss */
 #header ul li {
   display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
 }
 /* line 95, ../sass/styles.scss */
 #header ul li a {
   display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
   color: #fff;
   margin-left: 2em;
   -webkit-transition: all 0.25s;
@@ -114,7 +102,6 @@ p {
   font-weight: 400;
   color: #fff;
   background-color: #268b26;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
   background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
   background-image: linear-gradient(#268b26, #40a540, #5abf5a);
   background-size: 100% 200%;
@@ -162,28 +149,16 @@ p {
     margin: 0;
     padding: 0;
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
     float: right;
     line-height: 40px;
   }
   /* line 92, ../sass/styles.scss */
   #header ul li {
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
   }
   /* line 95, ../sass/styles.scss */
   #header ul li a {
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
     color: #fff;
     margin-left: 2em;
     -webkit-transition: all 0.25s;
@@ -207,7 +182,6 @@ p {
     font-weight: 400;
     color: #fff;
     background-color: #268b26;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
     background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
     background-image: linear-gradient(#268b26, #40a540, #5abf5a);
     background-size: 100% 200%;
@@ -265,28 +239,16 @@ p {
     margin: 0;
     padding: 0;
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
     float: right;
     line-height: 40px;
   }
   /* line 92, ../sass/styles.scss */
   #header ul li {
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
   }
   /* line 95, ../sass/styles.scss */
   #header ul li a {
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
     color: #fff;
     margin-left: 2em;
     -webkit-transition: all 0.25s;
@@ -310,7 +272,6 @@ p {
     font-weight: 400;
     color: #fff;
     background-color: #268b26;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
     background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
     background-image: linear-gradient(#268b26, #40a540, #5abf5a);
     background-size: 100% 200%;
@@ -329,10 +290,6 @@ p {
   /* line 130, ../sass/styles.scss */
   #header img {
     display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
   }
 }
 
@@ -416,7 +373,6 @@ p {
   font-weight: 400;
   color: #fff;
   background-color: #268b26;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
   background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
   background-image: linear-gradient(#268b26, #40a540, #5abf5a);
   background-size: 100% 200%;
@@ -612,7 +568,6 @@ p {
   font-weight: 400;
   color: #fff;
   background-color: #268b26;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #268b26), color-stop(50%, #40a540), color-stop(100%, #5abf5a));
   background-image: -webkit-linear-gradient(#268b26, #40a540, #5abf5a);
   background-image: linear-gradient(#268b26, #40a540, #5abf5a);
   background-size: 100% 200%;
