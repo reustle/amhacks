@@ -58,8 +58,8 @@ $('.panel-apply form').ajaxChimp({
 $('.application-complete').hide();
 
 $(document).on('ready', function(){
-    map = L.mapbox.map('map', 'ruidacosta.hjamk02c');
-    $(window).trigger('resize');
+    // map = L.mapbox.map('map', 'ruidacosta.hjamk02c');
+    // $(window).trigger('resize');
     
     $('a[href^="#"]').click(function(e) {
         var href = $(this).attr('href').toString();
@@ -73,13 +73,13 @@ $(document).on('ready', function(){
         }
     });
 });
-$(window).on('resize', function(){
-    map.fitBounds([
-        [55.92458580482951, -65.390625],
-        [18.062312304546726, -131.30859375]
-    ]);
-    map.scrollWheelZoom.disable();
-});
+// $(window).on('resize', function(){
+//     map.fitBounds([
+//         [55.92458580482951, -65.390625],
+//         [18.062312304546726, -131.30859375]
+//     ]);
+//     map.scrollWheelZoom.disable();
+// });
 $(window).on('scroll', function(){
     if($(window).scrollTop() > $('#home').outerHeight()){
         $('#header').addClass('fixed');
